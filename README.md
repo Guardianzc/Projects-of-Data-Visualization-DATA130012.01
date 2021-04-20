@@ -10,17 +10,30 @@ This is a report including all projects in my 2020 Spring Data Visualization cou
    * [Project6_VTK](./Project6)
    
 ## Details
-**Project1-Pacman**
-* In this project, my Pacman agent will find paths through the maze world, both to reach a particular location and to collect food efficiently. I will build general search algorithms and apply them to Pacman scenarios. (Key words: DFS, BFS, UCS, A* Search, Heuristic function, Greedy)
-* You can see the detail of project [here](./Project1_Pacman/search2019_2.zip) and my report [here](./Project1_Pacman/Report.pdf)
+**Project1_Histograms**
+* 1 (1) implement n-dimensional joint histogram and test the code on two-dimensional data; plot the results. (2) implement computation of local histograms of an image using the efficient update of local histogram method introduced in local histogram processing.
+* 2 Implement a piecewise linear transformation function (below figure) for image contrast stretching. The code should read in an image; for intensity of all pixels, use the function to compute new intensity values; and finally output/ save the image with new intensity values.
+* 3 Implement the algorithm of local histogram equalization: (1) first implement histogram equalization algorithm, and then (2) implement the local histogram equalization using efficient computation of local histogram. Please test your code on images and show the results in your report.
+* You can see the detail of project [here](./Project1/Project1.py) and my report [here](./Project1/Project1.pdf)
     
-**Project2_Nqueens**
-* In this project, I am going to construct a CSP for N-Queens problem.(Key words: Backtracking, CSP, AC-3)
-* You can see the detail of project [here](./Project2_Nqueens/pj2.zip) and my report [here](./Project2_Nqueens/Report.pdf)
+**Project2_OTSU**
+* 1 Restate the Basic Global Thresholding (BGT) algorithm so that it uses the histogram of an image instead of the image itself. 
+* 2 Design an algorithm with the function of locally adaptive thresholding (e.g. based on moving average or local OSTU); implement the algorithm and test it on exemplar image(s).
+* 3 编程实现线性插值算法（不能调用某个算法库里面的插值函数），并应用：读出一幅图像，利用线性插值把图片空间分辨率放大N倍，然后保存图片。
+* You can see the detail of project [here](./Project2/Project2.py) and my report [here](./Project2/Project2.pdf)
 
-**Project3_Blackjack**
-* In this project, I implement algorithms to find the optimal policy in some situations, also I formalize a modified version of Blackjack as an MDP, and apply the algorithm to find the optimal policy.(Key words: MDP)
-* You can see the detail of project [here](./Project3_Blackjack/index.html) and my report [here](./Project3_Blackjack/Report.pdf)
+**Project3_Smoothing,Sharpening & Fourier transform**
+* 1 编程实现基于空间滤波器的（1）平滑操作、（2）锐化算法算法；并把算法应用与图片上，显示与原图的对比差别。备注：实现的代码不能调用某个算法库里面的函数实现平滑或锐化。
+* 2 证明二维变量的离散傅里叶变换的卷积定理即：
+f(x,y)*h(x,y) <==> F(u,v)H(u,v)
+f(x,y)h(x,y)  <==> F(u,v)*H(u,v)
+
+    其中, * 表示卷积运算。
+* 3 编程实现基于课件中频率域滤波5步骤的：（1）低通平滑操作，并把算法应用与图片上，显示原图的频谱图、频域操作结果的频谱图，以及操作结果；（2）频率操作，去除大脑CT体膜Shepp-Logan图像中的条纹。
+[freq_testimage_shepplogan.PNG](./Project3/freq_testimage_shepplogan.PNG)
+
+备注：图像的时空-频域变换过程（即离散傅里叶变换和逆变换）可以调用库函数。
+* You can see the detail of project [here](./Project3/Project3.py) and my report [here](./Project3/HW3_钟诚_16307110259.pdf)
     
 **Project4_Cars**
 * This project is a modified version of the Driverless Car assignment written by Chris Piech.
